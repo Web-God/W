@@ -1,0 +1,14 @@
+li{float: left;
+color:#1abc9c;
+}
+li:after{
+content:'| ';
+};
+li:a{
+	text-decoration: none;
+	color: #1abc9c!important;
+}
+a:hover{
+	text-decoration: none;
+	color: #16a085;
+}
