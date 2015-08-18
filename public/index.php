@@ -9,6 +9,9 @@
 	//rares fonctions globales
 	require("../W/globals.php");
 
+	//Fonctions time et print_r
+	require("../app/functions.php");
+
 	//instancie notre appli en lui passant la config et les routes
 	$app = new W\App($w_routes, $w_config);
 

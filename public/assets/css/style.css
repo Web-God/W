@@ -1,9 +1,18 @@
 li{float: left;
 color:#1abc9c;
 }
+
+nav{
+	width: 600px;
+	margin: 0 auto;
+}
 li:after{
 content:'| ';
-};
+}
+li:last-child::after{
+content:'';
+}
+
 li:a{
 	text-decoration: none;
 	color: #1abc9c!important;
@@ -11,4 +20,15 @@ li:a{
 a:hover{
 	text-decoration: none;
 	color: #16a085;
+}
+img{
+	display: block;
+	max-width: 100%;
+
+}
+.container{
+	clear: both;
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
 }

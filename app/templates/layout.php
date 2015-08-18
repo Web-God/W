@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php 
+	$siteTitle = "Framework W";
+	$titleCopy = "Webforce3";
+	//$currentYear = date("Y");
+	$currentYear = date("Y-m-d H:i:s",time());
+	$maDevise = "Quand tout a échoué lisez la Notice";
+ ?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
@@ -22,14 +28,16 @@
 				<li>
 				<a href="<?php echo $this->url('about'); ?>">A propos</a>
 				</li>
-			</ul>
-				
+			</ul>				
 		</nav>
 		<section>
 			<?= $this->section('main_content') ?>
 		</section>
 
-		<footer>
+		<footer>&copy;<?php echo $titleCopy." ". convertDateToFrench($currentYear) ?><?php echo " - " .$siteTitle ?>
+			<details>
+				<summary>Denis Godec</summary>
+			</details>
 		</footer>
 	</div>
 </body>
